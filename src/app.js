@@ -1,6 +1,8 @@
 const express = require('express')
+const bodyParser = require('body-parser');
 const app = express()
 const port = 3001
+app.use(bodyParser.json());
 const usuariosController = require("./Controllers/usuarios-controller");
 const tarefasController = require("./Controllers/tarefas-controller");
 

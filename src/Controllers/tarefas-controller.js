@@ -5,5 +5,6 @@ module.exports = (app) => {app.get('/tarefas', (req, res) => {
   module.exports = (app) => {
     app.post('/tarefas', (req, res) => {
         res.send("ROTA POST DE TAREFAS ATIVA: TAREFA adicionado ao banco de dados.")
+        console.log(req.body);
     })};
     
